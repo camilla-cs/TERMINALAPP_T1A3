@@ -3,15 +3,14 @@ import os.path
 
 
 #External packages
-  
+
 
 #Imports of our own functions 
 
 print("Welcome to 'A Study in Red' mistery game." )
 
-
-
 username = input("Please choose your username: ") #input username 
+
 print("You are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
 print("Your task is to gather evidence, question the suspects and catch the killer!")
 print("Let's begin the investigation! \n")
@@ -22,7 +21,7 @@ def options_menu ():
     
     print("1. Investigate the crime scene. ")
     print("2. Question a suspect. ")
-    print("3. review the evidence. ")
+    print("3. Use the Notebook. ")
     print("4. Make an accusation! ")
     print("5. Quit the investigation. ")
 
@@ -38,10 +37,10 @@ while choice != "5":
         crime_scene ()
 
     elif choice == "2":
-        question_suspect()
+        suspects_list ()
 
     elif choice == "3": 
-        review_evidence()
+        notebook ()
 
     elif choice == "4": 
         accusation ()
@@ -53,5 +52,4 @@ while choice != "5":
         print("Please enter a number shown above. ")
 
 print("Thank you for playing 'A study in Red'! ")
-
 
