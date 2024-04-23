@@ -3,14 +3,16 @@ import os.path
 
 
 #External packages
-
-
+  
 
 #Imports of our own functions 
 
 print("Welcome to 'A Study in Red' mistery game." )
-print("Please choose your username: ") #input username 
-print("You are detective who has been assigned to investigate the murder of mr. Otto, a rich old man, happened in his mansion." )
+
+
+
+username = input("Please choose your username: ") #input username 
+print("You are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
 print("Your task is to gather evidence, question the suspects and catch the killer!")
 print("Let's begin the investigation! \n")
 
@@ -45,7 +47,7 @@ while choice != "5":
         accusation ()
     
     elif choice =="5": 
-        print("You quite the investigation. ")
+        print("You quit the investigation. ")
 
     else: 
         print("Please enter a number shown above. ")
