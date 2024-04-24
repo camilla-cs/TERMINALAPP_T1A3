@@ -6,16 +6,20 @@ import os.path
 
 
 #Imports of our own functions 
+from notebook_functions import add_note, remove_note 
+from crime_scene import evidence 
+from suspects_list import suspects
+from accusation import catch_killer
 
 print("Welcome to 'A Study in Red' mistery game." )
 
-username = input("Please choose your username: ") #input username 
+username = input("\n Please choose your username: ") #input username 
 
-print("You are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
+print("\nYou are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
 print("Your task is to gather evidence, question the suspects and catch the killer!")
-print("Let's begin the investigation! \n")
+print("\nLet's begin the investigation! \n")
 
-print("What would you like to do?")
+print("\nWhat would you like to do?")
 
 def options_menu (): 
     
@@ -28,22 +32,31 @@ def options_menu ():
     user_choice = input("Enter your selection: ")
     return user_choice 
 
+file_name = "notebook.csv"
+
+if (not os.path.isfile (file_name)):
+    print("Creating the notebook...")
+    notebook_file = open(file_name, "w")
+    notebook_file.close()
+
+
 choice=""
 
 while choice != "5": 
     choice = options_menu()
 
     if choice == "1": 
-        crime_scene ()
+        evidence ()
 
     elif choice == "2":
-        suspects_list ()
+        suspects ()
+        
 
     elif choice == "3": 
-        notebook ()
+        pass
 
     elif choice == "4": 
-        accusation ()
+        catch_killer ()
     
     elif choice =="5": 
         print("You quit the investigation. ")
