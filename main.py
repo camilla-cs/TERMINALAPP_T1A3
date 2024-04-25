@@ -8,17 +8,19 @@ import os.path
 #Imports of our own functions 
 # from notebook_functions import add_note, remove_note 
 from crime_scene import evidence 
-from suspects_list import suspects
+from suspects_list_2 import suspects 
+# from suspects_list import suspects
 # from accusation import catch_killer
 
-print("Welcome to 'A Study in Red' mistery game." )
+print("=================================================================== A STUDY IN RED ==============================================================================")
+print("\nWelcome to 'A Study in Red' mistery game." )
 
 username = input("\nPlease choose your username: ") #input username 
 
 print("You are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
 print("Your task is to gather evidence, question the suspects and catch the killer!")
 print("Let's begin the investigation! \n")
-print("-------------------------------------------------------------------------------------------------------------------------------------------------------")
+print("")
 
 print("\nWhat would you like to do?")
 
@@ -33,21 +35,13 @@ def options_menu ():
     user_choice = input("Enter your selection: ")
     return user_choice 
 
-file_name = "notebook.csv"
-
-if (not os.path.isfile (file_name)):
-    print("Creating the notebook...")
-    notebook_file = open(file_name, "w")
-    notebook_file.close()
-
-
 choice=""
 
 while choice != "5": 
     choice = options_menu()
 
     if choice == "1": 
-        evidence ()
+        evidence()
 
     elif choice == "2":
         suspects ()
@@ -64,5 +58,15 @@ while choice != "5":
     else: 
         print("Please enter a number shown above. ")
 
+
+file_name = "notebook.csv"
+
+if (not os.path.isfile (file_name)):
+    print("Creating the notebook...")
+    notebook_file = open(file_name, "w")
+    notebook_file.close()
+
+
 print("Thank you for playing 'A study in Red'! ")
+print("===============================================================================================================================================================")
 
