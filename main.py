@@ -6,18 +6,19 @@ import os.path
 
 
 #Imports of our own functions 
-from notebook_functions import add_note, remove_note 
+# from notebook_functions import add_note, remove_note 
 from crime_scene import evidence 
 from suspects_list import suspects
-from accusation import catch_killer
+# from accusation import catch_killer
 
 print("Welcome to 'A Study in Red' mistery game." )
 
-username = input("\n Please choose your username: ") #input username 
+username = input("\nPlease choose your username: ") #input username 
 
-print("\nYou are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
+print("You are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
 print("Your task is to gather evidence, question the suspects and catch the killer!")
-print("\nLet's begin the investigation! \n")
+print("Let's begin the investigation! \n")
+print("-------------------------------------------------------------------------------------------------------------------------------------------------------")
 
 print("\nWhat would you like to do?")
 
@@ -51,12 +52,11 @@ while choice != "5":
     elif choice == "2":
         suspects ()
         
-
     elif choice == "3": 
         pass
 
     elif choice == "4": 
-        catch_killer ()
+        pass
     
     elif choice =="5": 
         print("You quit the investigation. ")
