@@ -1,2 +1,10 @@
 def catch_killer(): 
-    pass
+    print("You make an accusation based on the evidence gathered.")
+    user_choice = input("Who do you accuse of murder? ")
+    return user_choice
+
+if suspect == guilty_suspect():
+    print("Congratulations, you solved the crime!")
+else: 
+    print(f"Sorry,{suspect} is not the killer. Keep investigating!")
+
