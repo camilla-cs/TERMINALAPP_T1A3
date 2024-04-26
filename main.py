@@ -8,7 +8,7 @@ import os.path
 #Imports of our own functions 
 # from notebook_functions import add_note, remove_note 
 from crime_scene import evidence 
-from suspects_list_3 import suspects 
+from suspects_list_3 import motives 
 # from accusation import catch_killer
 
 print("=================================================================== A STUDY IN RED ==============================================================================")
@@ -42,13 +42,13 @@ while choice != "5":
         evidence()
 
     elif choice == "2":
-        choice = suspects(choice)
+        motives ()
         
     elif choice == "3": 
         pass
 
     elif choice == "4": 
-       pass
+        pass
     
     elif choice =="5": 
         print("You quit the investigation. ")
@@ -67,5 +67,5 @@ if (not os.path.isfile (file_name)):
 
 
 print("Thank you for playing 'A study in Red'! ")
-print("======================================================================== THE END =======================================================================================")
+print("======================================================================== THE END ============================================================================")
 

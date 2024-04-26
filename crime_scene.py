@@ -9,6 +9,7 @@ def evidence ():
     print("+ Necklace ")
     print("+ Tobacco")
     print("+ Cleaning supplies")
-    choice = input ("\n Would you like to interview the suspects? Choose between yes or no: ")
+    choice = input ("\n Press enter to go back to the menu. ")
     return choice
+
 

@@ -1,6 +1,4 @@
-
-
-# guilty_suspect ="Driver".lower
+# guilty_suspect ="driver".lower
 
 # def catch_killer(): 
 #     print("\nYou make an accusation based on the evidence gathered.")
@@ -10,7 +8,6 @@
 # choice =""
 
 # while choice != guilty_suspect: 
-#     choice = suspects ()
 #     if choice == "driver":
 #         print("Congratulations, you solved the crime!")
 #     else: 
