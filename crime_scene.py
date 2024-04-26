@@ -1,4 +1,4 @@
-# from suspects_list import suspects
+from suspects_list_3 import suspects
 
 def evidence (): 
     print("\nYou enter the crime scene...You notice the victim is on the ground with a stab wound.\n")
@@ -11,3 +11,4 @@ def evidence ():
     print("+ Cleaning supplies")
     choice = input ("\n Would you like to interview the suspects? Choose between yes or no: ")
     return choice
+

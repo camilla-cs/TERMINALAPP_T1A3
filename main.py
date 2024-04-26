@@ -8,8 +8,7 @@ import os.path
 #Imports of our own functions 
 # from notebook_functions import add_note, remove_note 
 from crime_scene import evidence 
-from suspects_list_2 import suspects 
-# from suspects_list import suspects
+from suspects_list_3 import suspects 
 # from accusation import catch_killer
 
 print("=================================================================== A STUDY IN RED ==============================================================================")
@@ -17,15 +16,14 @@ print("\nWelcome to 'A Study in Red' mistery game." )
 
 username = input("\nPlease choose your username: ") #input username 
 
-print("You are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his mansion." )
+print("\nYou are detective" + " "+ username + " ,who has been assigned to investigate the murder of mr. Otto, a rich old man who was killed in his study at home." )
 print("Your task is to gather evidence, question the suspects and catch the killer!")
 print("Let's begin the investigation! \n")
-print("")
 
-print("\nWhat would you like to do?")
+
 
 def options_menu (): 
-    
+    print("\nWhat would you like to do?")
     print("1. Investigate the crime scene. ")
     print("2. Question a suspect. ")
     print("3. Use the Notebook. ")
@@ -44,20 +42,19 @@ while choice != "5":
         evidence()
 
     elif choice == "2":
-        suspects ()
+        choice = suspects(choice)
         
     elif choice == "3": 
         pass
 
     elif choice == "4": 
-        pass
+       pass
     
     elif choice =="5": 
         print("You quit the investigation. ")
 
     else: 
         print("Please enter a number shown above. ")
-
 
 file_name = "notebook.csv"
 
@@ -67,6 +64,8 @@ if (not os.path.isfile (file_name)):
     notebook_file.close()
 
 
+
+
 print("Thank you for playing 'A study in Red'! ")
-print("===============================================================================================================================================================")
+print("======================================================================== THE END =======================================================================================")
 

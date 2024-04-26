@@ -1,3 +1,4 @@
+
 def suspects (): 
     print ("\nYou start interviewing the suspects: ")
     print("1. Wife")
@@ -9,10 +10,11 @@ def suspects ():
     user_choice = input("Who would you like to interview? ")
     return user_choice
 
+
 choice = ""
 
 while choice != "6":
-    choice = suspects()
+    choice = suspects ()
 
     if choice == "1": 
         print("\nYou are questioning the Wife, making time to ask them about the relationship with the victim and what were they doing when the murder happened...")
@@ -28,6 +30,7 @@ while choice != "6":
         print("\nYou are questioning the Chef, making time to ask them about the relationship with the victim and what were they doing when the murder happened...")
         print("The suspect's alibi is: Making dinner in the kitchen. ")
         print("After talking with the suspect you arrive at the conclusion that their possible motive could be: Dispute over salary")
+
     elif choice =="4": 
         print("\nYou are questioning the Driver, making time to ask them about the relationship with the victim and what were they doing when the murder happened...")
         print("The suspect's alibi is: Waiting outside in the car. ")
@@ -37,6 +40,9 @@ while choice != "6":
         print("\nYou are questioning the Cleaning lady, making time to ask them about the relationship with the victim and what were they doing when the murder happened...")
         print("The suspect's alibi is: Cleaning the patio. ")
         print("After talking with the suspect you arrive at the conclusion that their possible motive could be: Unknown. ")
+    
+    elif choice == "6":
+        print("You quit the game.")
 
     else: 
         "Please, put a number from above. "
