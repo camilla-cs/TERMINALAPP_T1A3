@@ -46,6 +46,3 @@ def motives ():
 
         else: 
             "Please, put a number from above. "
-        
-
-

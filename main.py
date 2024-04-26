@@ -9,7 +9,7 @@ import os.path
 # from notebook_functions import add_note, remove_note 
 from crime_scene import evidence 
 from suspects_list_3 import motives 
-# from accusation import catch_killer
+from accusation import final_accusation
 
 print("=================================================================== A STUDY IN RED ==============================================================================")
 print("\nWelcome to 'A Study in Red' mistery game." )
@@ -48,7 +48,7 @@ while choice != "5":
         pass
 
     elif choice == "4": 
-        pass
+        final_accusation ()
     
     elif choice =="5": 
         print("You quit the investigation. ")
@@ -66,6 +66,6 @@ if (not os.path.isfile (file_name)):
 
 
 
-print("Thank you for playing 'A study in Red'! ")
+print("\nThank you for playing 'A study in Red'! ")
 print("======================================================================== THE END ============================================================================")
 
