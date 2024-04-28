@@ -1,4 +1,5 @@
 import csv
+
 def notebook_menu():
     print("You open the notebook. What would you like to do? ")
     print("1. Add note. ")
@@ -26,7 +27,8 @@ def remove_note (file_name):
         writer.writerows(good_notes)
     
 
-
+def edit_note (file_name): 
+    pass
 
 def view_notebook (file_name):
     try: 
@@ -39,3 +41,21 @@ def view_notebook (file_name):
                 print(f"{row[0]} is not complete.")
     except FileNotFoundError: 
         print("The todo file does not exist. ")
+
+file_name = "notebook.csv"
+
+choice =""
+
+while choice != "5": 
+    choice = notebook_menu()
+
+    if choice == "1":
+        add_note (file_name)
+    elif choice == "2": 
+        remove_note(file_name)
+    elif choice =="3": 
+        edit_note(file_name)
+    elif choice == "4": 
+        view_notebook (file_name) 
+    else: 
+        print("You quit the investigation.")
