@@ -1,5 +1,5 @@
 def final_accusation():
-    
+    print("====================================================================================================================================================================")
     print("\nYou make an accusation based on the evidence gathered.")
 
     guilty_suspect = "driver"
