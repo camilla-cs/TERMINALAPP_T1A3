@@ -45,8 +45,8 @@ def edit_note (file_name):
             notes [note_index][0] = new_note
 
             with open (file_name,"w", newline="") as f:
-            writer = csv.writer (f)
-            writer.writerows (notes)
+                writer = csv.writer (f)
+                writer.writerows (notes)
             print ("Note changed successfully.")
         else:
             print ("Note not found. ")
@@ -56,24 +56,16 @@ def edit_note (file_name):
 
 
 
-
-
-
-
-
-
-
 def view_notebook (file_name):
     try: 
         with open(file_name, "r") as f: 
             reader = csv.reader (f) 
-        for row in reader:
-            if (row[1] == "True"): 
-                print(f"{row[0]} is complete.")
+            for row in reader:
+                print()
             else:
-                print(f"{row[0]} is not complete.")
+                print()
     except FileNotFoundError: 
-        print("The todo file does not exist. ")
+        print("The notebook file does not exist. ")
 
 file_name = "notebook.csv"
 

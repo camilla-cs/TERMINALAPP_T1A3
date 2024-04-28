@@ -11,7 +11,7 @@ from crime_scene import evidence
 from suspects_list_3 import motives 
 from accusation import final_accusation
 
-print("=================================================================== A STUDY IN RED ==============================================================================")
+print(f"{Fore.red}=================================================================== A STUDY IN RED =============================================================================={Style.reset}")
 print("\nWelcome to 'A Study in Red' mistery game." )
 
 username = input("\nPlease choose your username: ") #input username 
@@ -67,5 +67,5 @@ if (not os.path.isfile (file_name)):
 
 
 print("\nThank you for playing 'A study in Red'! ")
-print("======================================================================== THE END ============================================================================")
+print(f"{Fore.red}======================================================================== THE END ============================================================================{Style.reset}")
 

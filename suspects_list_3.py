@@ -1,5 +1,7 @@
+from colored import Fore, Back, Style
 
 def suspects (): 
+    print(f"{Fore.red}===================================================================================================================================================================={Style.reset}")
     print ("\nYou start interviewing the suspects: ")
     print("1. Wife")
     print("2. Son")
@@ -8,7 +10,10 @@ def suspects ():
     print("5. Cleaning lady")
     print("6. Quit the game. ")
     user_choice = input("Who would you like to interview? ")
+    if not type(user_choice) is int:
+        raise TypeError("Only integers are allowed")
     return user_choice
+    
 
 
 def motives (): 
@@ -46,5 +51,3 @@ def motives ():
 
         else: 
             "Please, put a number from above. "
-
-raise TypeError("Only integers are allowed")
