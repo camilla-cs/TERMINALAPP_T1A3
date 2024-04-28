@@ -6,12 +6,12 @@ import os.path
 from colored import Fore, Back, Style 
 
 #Imports of our own functions 
-from notebook_functions import notebook_menu, add_note, remove_note, edit_note, view_notebook
+from notebook_functions import notebook
 from crime_scene import evidence 
 from suspects_list_3 import motives 
 from accusation import final_accusation
 
-print(f"{Fore.red}=================================================================== A STUDY IN RED =============================================================================={Style.reset}")
+print(f"{Fore.red}=================================================================== A STUDY IN RED ============================================================={Style.reset}")
 print("\nWelcome to 'A Study in Red' mistery game." )
 
 username = input("\nPlease choose your username: ") #input username 
@@ -45,7 +45,7 @@ while choice != "5":
         motives ()
         
     elif choice == "3": 
-        notebook_menu()
+        notebook()
 
     elif choice == "4": 
         final_accusation ()
@@ -67,5 +67,5 @@ if (not os.path.isfile (file_name)):
 
 
 print("\nThank you for playing 'A study in Red'! ")
-print(f"{Fore.red}======================================================================== THE END ============================================================================{Style.reset}")
+print(f"{Fore.red}======================================================================== THE END =================================================================={Style.reset}")
 
