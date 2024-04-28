@@ -16,7 +16,15 @@ def add_note (file_name):
         writer.writerow ([note])
 
 def remove_note (file_name): 
-    pass
+    note_to_remove = input ("Enter the note you want to remove: ")
+    with open (file_name,"r") as f: 
+        reader = csv.reader(f) 
+        notes = list(reader)
+    good_notes = [note for note in notes if note [0] != note_to_remove]
+    with open (file_name, "w", newline="") as f: 
+        writer = csv.writer(f)
+        writer.writerows(good_notes)
+    
 
 
 

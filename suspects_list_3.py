@@ -46,3 +46,5 @@ def motives ():
 
         else: 
             "Please, put a number from above. "
+
+raise TypeError("Only integers are allowed")
