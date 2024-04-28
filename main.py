@@ -3,7 +3,7 @@ import os.path
 
 
 #External packages
-
+from colored import Fore, Back, Style 
 
 #Imports of our own functions 
 # from notebook_functions import add_note, remove_note 
