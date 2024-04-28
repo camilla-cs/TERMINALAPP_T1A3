@@ -1,6 +1,8 @@
 import csv
+from colored import Fore, Back, Style
 
 def notebook_menu():
+    print(f"{Fore.red}===================================================================================================================================================================={Style.reset}")
     print("You open the notebook. What would you like to do? ")
     print("1. Add note. ")
     print("2. Remove note. ")
@@ -61,9 +63,7 @@ def view_notebook (file_name):
         with open(file_name, "r") as f: 
             reader = csv.reader (f) 
             for row in reader:
-                print()
-            else:
-                print()
+                print(row[0])
     except FileNotFoundError: 
         print("The notebook file does not exist. ")
 

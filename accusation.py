@@ -8,7 +8,7 @@ def final_accusation():
 
     def catch_killer(): 
         user_choice = input("\nWho do you accuse of murder? ")
-        if not type (user_choice) is int:
+        if not type (user_choice) is str:
             raise TypeError("Only letters are allowed. ")
         return user_choice.lower()
 

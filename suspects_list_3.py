@@ -10,7 +10,7 @@ def suspects ():
     print("5. Cleaning lady")
     print("6. Quit the game. ")
     user_choice = input("Who would you like to interview? ")
-    if not type(user_choice) is int:
+    if not type(user_choice) is str:
         raise TypeError("Only integers are allowed")
     return user_choice
     

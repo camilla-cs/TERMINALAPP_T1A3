@@ -6,7 +6,7 @@ import os.path
 from colored import Fore, Back, Style 
 
 #Imports of our own functions 
-# from notebook_functions import add_note, remove_note 
+from notebook_functions import notebook_menu, add_note, remove_note, edit_note, view_notebook
 from crime_scene import evidence 
 from suspects_list_3 import motives 
 from accusation import final_accusation
@@ -45,7 +45,7 @@ while choice != "5":
         motives ()
         
     elif choice == "3": 
-        pass
+        notebook_menu()
 
     elif choice == "4": 
         final_accusation ()
