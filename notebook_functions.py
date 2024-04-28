@@ -28,7 +28,40 @@ def remove_note (file_name):
     
 
 def edit_note (file_name): 
-    pass
+    note_to_edit= input ("Enter the note you want to edit: ")
+    new_note = input("Enter the new note: ")
+
+    try: 
+        with open (file_name, "r") as f: 
+            reader = csv.reader (f)
+            notes = list(reader)
+        
+        note_index = None
+        for i, note in enumerate (notes): 
+            if note[0] == note_to_edit:
+                note_index = i
+                break
+        if note_index is not None: 
+            notes [note_index][0] = new_note
+
+            with open (file_name,"w", newline="") as f:
+            writer = csv.writer (f)
+            writer.writerows (notes)
+            print ("Note changed successfully.")
+        else:
+            print ("Note not found. ")
+    except FileNotFoundError:
+        print("The notebook file does not exist. ")
+
+
+
+
+
+
+
+
+
+
 
 def view_notebook (file_name):
     try: 
