@@ -9,7 +9,7 @@ def notebook ():
         print("2. Remove note. ")
         print("3. Edit note. ")
         print("4. View notes. ")
-        print("5. Quit the game. ")
+        print("5. Go back to the main menu. ")
         user_choice = input("\nEnter a number:  ")
         return user_choice
 

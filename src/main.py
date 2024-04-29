@@ -56,7 +56,7 @@ while choice != "5":
     else: 
         print("Please enter a number shown above. ")
 
-file_name = "notebook.csv"
+file_name = "./notebook.csv"
 
 if (not os.path.isfile (file_name)):
     print("Creating the notebook...")
