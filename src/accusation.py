@@ -19,7 +19,7 @@ def final_accusation():
         if choice == "driver":
             print("Congratulations, you solved the crime!")
             print("\nThank you for playing 'A study in Red'! ")
-            print(f"{Fore.red}======================================================================== THE END ============================================================================{Style.reset}")
+            print(f"{Fore.red}===================================================================================================================================================={Style.reset}")
             print("Would you like to play again?")
         else: 
             print(f"Sorry, the {choice} is not the killer. Keep investigating!")
