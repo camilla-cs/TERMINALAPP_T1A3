@@ -33,6 +33,7 @@ The main features of 'A Study in Red' are:
 
 ## Implementation plan: 
 Trello has been used to keep track of the application's development. I divided the tasks by each feature I wanted to be implemented. 
+The deadline is set on 5 May, the day of the assignment's submission, and the list of features are checked as I complete writing the code for them. 
 
 --> screenshots 
 
