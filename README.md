@@ -1,25 +1,40 @@
-T1A3 Camilla De Pretto 
+## T1A3 Camilla De Pretto - Terminal Application
+Terminal application submitted for Coder Academy diploma. 
 
-## Github online repository link
+The application is a a text-based terminal application born from my interest in mystery games and stories like Arthur C. Doyle's Sherlock Holmes, the name itself is a reference to the first book by the author. 
+
+### Github online repository link
 (link)
 
-## Style guide convention used: 
+### Style guide convention used: 
 [Google Python style guide] (https://google.github.io/styleguide/pyguide.html)
 
-## Features: 
-The main features of 'A Study in Red': 
+### How to use the app: 
+This app needs Python3 installed to be used successfully. 
+
+--> virtual environment
+
+To run the app write ./src/run.sh in the terminal. 
+
+
+### Features: 
+The main features of 'A Study in Red' are: 
 * Program - user inteaction
- There's a continuos interaction between the program and the user throughout the entire use of the terminal application in a input-output relationship. 
- From the beginning the user will have to choose an username for the game and it will be returned as the role they will have in the game. 
- The user will try to catch the responsible of the crime from the main option menu that is gonna appear after a brief introduction, where they can choose between investigating the crime scene, interviewing the suspects, use the notebook, make an accusation or quit the game.
+ There's a continuos interaction between the program and the user throughout the entire use of the terminal application through a input-output relationship. 
+ From the beginning the user will have to choose an username that will be returned as well as the role they will have in the game. 
+ The user will try to catch the responsible of the crime starting from the main option menu, that is gonna appear after a brief introduction, where they can choose between investigating the crime scene, interviewing the suspects, use the notebook, make an accusation or quit the game. 
 
  * Character depth
  For the text-based game to be successful, it was necessary to create suspects with a motive and an alibi. There are a total of five suspects, each own with their own alibi and motives. It's up to the user to try to catch the killer by examining the evidence and reasoning about the suspects' interviews. 
 
  *  Notebook
  The notebook is a feature on its own for the fact that the user can add, remove, edit and view the notes they wrote just with a single input of the keyboard. 
- It could be a useful tool to write down the evidence and what the user think the killer is. 
+ It's a useful tool to write down what the user think the killer is. 
 
+## Implementation plan: 
+Trello has been used to keep track of the application's development. I divided the tasks by each feature I wanted to be implemented. 
 
+--> screenshots 
 
+### Walkthrough: 
 
