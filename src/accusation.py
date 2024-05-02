@@ -7,10 +7,8 @@ def final_accusation():
     guilty_suspect = "driver"
 
     def catch_killer(): 
-        user_choice = input("\nWho do you accuse of murder? ")
-        if not type (user_choice) is str:
-            raise TypeError("Only letters are allowed. ")
-        return user_choice.lower()
+        user_choice = input("\nWho do you accuse of murder? Write the name of the suspect: ")
+        return user_choice
 
     choice = ""
 
