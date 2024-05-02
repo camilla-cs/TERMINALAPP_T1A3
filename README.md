@@ -1,7 +1,7 @@
 ## T1A3 Camilla De Pretto - Terminal Application
 Terminal application submitted for Coder Academy diploma. 
 
-The application is a a text-based terminal application born from my interest in mystery games and stories like Arthur C. Doyle's Sherlock Holmes, the name itself is a reference to the first book by the author. 
+The application is a a text-based terminal, born from my interest in mystery games and stories like Arthur C. Doyle's 'Sherlock Holmes', the name itself is a reference to the first book by the author. 
 
 ### Github online repository link
 (link)
@@ -35,7 +35,14 @@ The main features of 'A Study in Red' are:
 Trello has been used to keep track of the application's development. I divided the tasks by each feature I wanted to be implemented. 
 The deadline is set on 5 May, the day of the assignment's submission, and the list of features are checked as I complete writing the code for them. 
 
---> screenshots 
+![Screenshot 1](./docs/Screenshot%201.png)
+![Screenshot 2](./docs/Screenshot%202.png)
+![Screenshot 3](./docs/Screenshot%203.png)
+![Screenshot 4](./docs/Screenshot%204.png)
+![Screenshot 5](./docs/Screenshot%205.png)
+![Scrrenshot 6](./docs/Screenshot%206.png)
+
 
 ### Walkthrough: 
+
 
