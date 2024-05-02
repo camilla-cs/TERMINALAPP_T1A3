@@ -69,8 +69,15 @@ In the code I made a module called 'suspects_list_3' with a similar function use
 
 The notebook function can be very useful to the user who wants to write down what they remember from the evidence and interviews.\ 
 In the code the notebook feature is made of 2 files: a csv file to input the notes and another one that will make the csv file work through a main function that contains other functions for each feature. \
-The 'add note' option will have the user to input thoughts freely. That is possible through a function used only for adding notes to the csv file that is called 'file_name' throughout the code, 
- the 'remove note' will delete a note, the 'edit note' option will remove a note and change it with another one. Finally the 'view notes' can be used for reviewing what has been written so far. \
+The 'add note' option will have the user to input thoughts freely. That is possible through a function used only for adding notes to the csv file that is called 'file_name', the file will be opened in append mode and the newline="" parameter will make sure that everytime the user will add a note, it will be inserted in a new line in the csv file. Then the function is closed with a method that will add the note into the csv file. 
+the 'remove note' function starts with a question to the user to enter the note they want to remove that will be stored in a variable, the csv file will be then opened in read-only mode.\
+The notes will be stored in a class named list where the notes are read by the program and converts them in a list of lists, where each list is a row in the csv file.\
+A new list will be created with the notes in the previous list will be read one by one and will be included apart from the one that matches the note to remove. The remaining notes are then re written into the csv file.\
+the 'edit note' option will ask the user to write the note they want to change, and to write a new one, which will be assigned to a new variable.\
+To handle errors a try-except block is used and inside that the program will open the file in read-only mode, it will iterate every note in the list to find the index of the note to edit, and it checks them by making a comparison with the variable 'note_to_edit' and if they match, it will assign an index to the note and the loop will break.\
+If the note was found the program will update the content of the list at the index that was matched with the new input from the user.\
+The file is then opened in write mode and the new content is updated but if the  file is not found an error message will be displayed.\
+Finally the 'view notes' can be used for reviewing what has been written so far by using a try except block in case the file doesn't exist. \
 The last option is to go back to the main menu. 
 
 
