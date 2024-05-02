@@ -14,25 +14,25 @@ This app needs Python3 installed to be used successfully.
 
 --> virtual environment
 
-To run the app write ./src/run.sh in the terminal. 
+To run the app write `./src/run.sh` in the terminal. 
 
 
 ### Features: 
 The main features of 'A Study in Red' are: 
-* Program - user inteaction
- There's a continuos interaction between the program and the user throughout the entire use of the terminal application through a input-output relationship. 
- From the beginning the user will have to choose an username that will be returned as well as the role they will have in the game. 
++ Program - user inteaction\
+ There's a continuos interaction between the program and the user throughout the entire use of the terminal application through a input-output relationship. \
+ From the beginning the user will have to choose an username that will be returned as well as the role they will have in the game. \
  The user will try to catch the responsible of the crime starting from the main option menu, that is gonna appear after a brief introduction, where they can choose between investigating the crime scene, interviewing the suspects, use the notebook, make an accusation or quit the game. 
 
- * Character depth
++ Character depth\
  For the text-based game to be successful, it was necessary to create suspects with a motive and an alibi. There are a total of five suspects, each own with their own alibi and motives. It's up to the user to try to catch the killer by examining the evidence and reasoning about the suspects' interviews. 
 
- *  Notebook
- The notebook is a feature on its own for the fact that the user can add, remove, edit and view the notes they wrote just with a single input of the keyboard. 
++  Notebook
+ The notebook is a feature on its own for the fact that the user can add, remove, edit and view the notes they wrote just with a single input of the keyboard. \
  It's a useful tool to write down what the user think the killer is. 
 
-## Implementation plan: 
-Trello has been used to keep track of the application's development. I divided the tasks by each feature I wanted to be implemented. 
+### Implementation plan: 
+Trello has been used to keep track of the application's development. I divided the tasks by each feature I wanted to be implemented. \
 The deadline is set on 5 May, the day of the assignment's submission, and the list of features are checked as I complete writing the code for them. 
 
 ![Screenshot 1](./docs/Screenshot%201.png)
@@ -62,14 +62,14 @@ When the user wants to interview the suspects by pressing '2' in the main option
 
 --> screenshot 
 
-The notebook function can be very useful to the user who wants to write down what they remember from the evidence and interviews. 
-The 'add note' option will have the user to input thoughts freely. the 'remove note' will delete a note, the 'edit note' option will remove a note and change it with another one. Finally the 'view notes' can be used for reviewing what has been written so far. 
+The notebook function can be very useful to the user who wants to write down what they remember from the evidence and interviews.\ 
+The 'add note' option will have the user to input thoughts freely. the 'remove note' will delete a note, the 'edit note' option will remove a note and change it with another one. Finally the 'view notes' can be used for reviewing what has been written so far. \
 The last option is to go back to the main menu. 
 
 --> screenshot
 
-If the user press '4' it will take them to the final stage of the game... catching the killer! 
-The programm will ask the user to input the suspect they think could be the responsible of the crime. 
+If the user press '4' it will take them to the final stage of the game... catching the killer!\ 
+The programm will ask the user to input the suspect they think could be the responsible of the crime. \
 If that won't be the case and the user inputs a incorrect name, they will have the chance to try again. 
 
 --> screenshot 
