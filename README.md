@@ -14,6 +14,10 @@ This app needs Python3 installed to be used successfully.
 
 --> virtual environment
 
+run chmod +x ./src/packages.sh to install the packages
+
+Then run ./src/packages.sh
+
 To run the app write `./src/run.sh` in the terminal. 
 
 
@@ -44,6 +48,7 @@ The deadline is set on 5 May, the day of the assignment's submission, and the li
 
 
 ### Walkthrough: 
+![Pseudocode](./docs/Terminal%20app.png)
 After running the code for starting the program the title will appear, and the user will be asked to input an username.
 
 
