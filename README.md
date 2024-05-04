@@ -1,7 +1,7 @@
 ## T1A3 Camilla De Pretto - Terminal Application
 Terminal application submitted for Coder Academy diploma. 
 
-The application is a a text-based terminal, born from my interest in mystery games and stories like Arthur C. Doyle's 'Sherlock Holmes', the name itself is a reference to the first book by the author. 
+The application is a a text-based terminal, born from my interest in mystery games and stories like Arthur C. Doyle's 'Sherlock Holmes', the name itself is a reference to the first book of the Sherlock Holmes' series. 
 
 ### Github online repository link
 [Github repository](https://github.com/camilla-cs/TERMINALAPP_T1A3)
@@ -10,13 +10,13 @@ The application is a a text-based terminal, born from my interest in mystery gam
 [Google Python style guide](https://google.github.io/styleguide/pyguide.html)
 
 ### Help documentation: 
-This app needs Python3 installed to be used successfully.\ 
+This app needs Python3 installed to be used successfully. \ 
 
 Open the terminal ,preferably in VSCode. \
 
-Run `chmod +x ./src/packages.sh` to install the packages.\
+Run `chmod +x ./src/packages.sh` to install the packages. \
 
-Then run `./src/packages.sh`.\
+Then run `./src/packages.sh`. \
 
 Finally, to run the app write `./src/run.sh` in the terminal. 
 
@@ -100,9 +100,11 @@ The last option is to go back to the main menu.
 If the user press '4' it will take them to the final stage of the game... catching the killer! \ 
 In the code it has been used one function that contains the variable for the guilty suspect, and another one that will ask the user to write the name of the suspect they think could be the responsible of the crime. \
 If that won't be the case and the user inputs a incorrect name, they will have the chance to try again. 
---> screenshot 
+![Make an accusation](./docs/make%20an%20accusation%20part%201.png)
+![Make a failed accusation](./docs/Make%20an%20accusation%20part%202.png)
 
 The last and final option from the main menu is to quit the game. 
---> screenshot
+![Finale](./docs/Finale.png)
+
 
 
