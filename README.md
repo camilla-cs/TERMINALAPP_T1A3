@@ -49,6 +49,7 @@ The deadline is set on 5 May, the day of the assignment's submission, and the li
 
 ### Walkthrough: 
 ![Pseudocode](./docs/Terminal%20app.png)
+
 After running the code for starting the program the title will appear, and the user will be asked to input an username.
 
 
@@ -84,24 +85,33 @@ The notebook function can be very useful to the user who wants to write down wha
 
 In the code the notebook feature is made of 2 files: a csv file to input the notes and another one that will make the csv file work through a main function that contains other functions for each feature. \
 The 'add note' option will have the user to input thoughts freely. That is possible through a function used only for adding notes to the csv file that is called 'file_name', the file will be opened in append mode and the newline="" parameter will make sure that everytime the user will add a note, it will be inserted in a new line in the csv file. Then the function is closed with a method that will add the note into the csv file. 
+
 ![Add a note](./docs/add%20note%201.png)
 ![Add a second note](./docs/add%20note%202.png)
+
 the 'remove note' function starts with a question to the user to enter the note they want to remove that will be stored in a variable, the csv file will be then opened in read-only mode. \
+
 ![Remove note](./docs/remove%20note.png)
+
 The notes will be stored in a class named list where the notes are read by the program and converts them in a list of lists, where each list is a row in the csv file. \
 A new list will be created with the notes in the previous list will be read one by one and will be included apart from the one that matches the note to remove. The remaining notes are then re written into the csv file. \
 the 'edit note' option will ask the user to write the note they want to change, and to write a new one, which will be assigned to a new variable. \
+
 ![Edit note](./docs/edit%20note.png)
+
 To handle errors a try-except block is used and inside that the program will open the file in read-only mode, it will iterate every note in the list to find the index of the note to edit, and it checks them by making a comparison with the variable 'note_to_edit' and if they match, it will assign an index to the note and the loop will break. \
 If the note was found the program will update the content of the list at the index that was matched with the new input from the user. \
 The file is then opened in write mode and the new content is updated but if the  file is not found an error message will be displayed. \
 Finally the 'view notes' can be used for reviewing what has been written so far by using a try except block in case the file doesn't exist. \
+
 ![View note](./docs/view%20note.png)
+
 The last option is to go back to the main menu. 
 
-If the user press '4' it will take them to the final stage of the game... catching the killer! \ 
+If the user press '4' it will take them to the final stage of the game... catching the killer! 
 In the code it has been used one function that contains the variable for the guilty suspect, and another one that will ask the user to write the name of the suspect they think could be the responsible of the crime. \
 If that won't be the case and the user inputs a incorrect name, they will have the chance to try again. 
+
 ![Make an accusation](./docs/make%20an%20accusation%20part%201.png)
 ![Make a failed accusation](./docs/Make%20an%20accusation%20part%202.png)
 
