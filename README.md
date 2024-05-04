@@ -58,7 +58,7 @@ After running the code for starting the program the title will appear, and the u
 There is an introduction where it is said that the user is a detective assigned to a homicide case and has to catch the killer. 
 
 The main menu consist of choosing from 5 options: 1. investigate the crime scene, 2. interview the suspects, 3. use the notebook, 4. make the final accusation and quit the game. \
-In the code I implemented a function that will display the possible choices, a while loop that will run as long as the input is not 5 (the option to quit the game) with if, elif,else statements for the remaining choices. Each one of them is then linked to functions put in separate modules. \
+In the code I implemented a function that will display the possible choices, a while loop that will run as long as the input is not 5 (the option to quit the game) with if, elif,else statements for the remaining choices. Each one of them is then linked to functions put in separate modules. 
 
 ![](./docs/term%20app%202.png)
 
@@ -89,20 +89,20 @@ The 'add note' option will have the user to input thoughts freely. That is possi
 ![Add a note](./docs/add%20note%201.png)
 ![Add a second note](./docs/add%20note%202.png)
 
-the 'remove note' function starts with a question to the user to enter the note they want to remove that will be stored in a variable, the csv file will be then opened in read-only mode. \
+the 'remove note' function starts with a question to the user to enter the note they want to remove that will be stored in a variable, the csv file will be then opened in read-only mode. 
 
 ![Remove note](./docs/remove%20note.png)
 
 The notes will be stored in a class named list where the notes are read by the program and converts them in a list of lists, where each list is a row in the csv file. \
 A new list will be created with the notes in the previous list will be read one by one and will be included apart from the one that matches the note to remove. The remaining notes are then re written into the csv file. \
-the 'edit note' option will ask the user to write the note they want to change, and to write a new one, which will be assigned to a new variable. \
+the 'edit note' option will ask the user to write the note they want to change, and to write a new one, which will be assigned to a new variable. 
 
 ![Edit note](./docs/edit%20note.png)
 
 To handle errors a try-except block is used and inside that the program will open the file in read-only mode, it will iterate every note in the list to find the index of the note to edit, and it checks them by making a comparison with the variable 'note_to_edit' and if they match, it will assign an index to the note and the loop will break. \
 If the note was found the program will update the content of the list at the index that was matched with the new input from the user. \
 The file is then opened in write mode and the new content is updated but if the  file is not found an error message will be displayed. \
-Finally the 'view notes' can be used for reviewing what has been written so far by using a try except block in case the file doesn't exist. \
+Finally the 'view notes' can be used for reviewing what has been written so far by using a try except block in case the file doesn't exist. 
 
 ![View note](./docs/view%20note.png)
 
