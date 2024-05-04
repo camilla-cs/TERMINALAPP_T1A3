@@ -10,13 +10,13 @@ The application is a a text-based terminal, born from my interest in mystery gam
 [Google Python style guide](https://google.github.io/styleguide/pyguide.html)
 
 ### Help documentation: 
-This app needs Python3 installed to be used successfully.\ 
+This app needs Python3 installed to be used successfully.
 
-Open the terminal ,preferably in VSCode.\
+Open the terminal ,preferably in VSCode.
 
-Run `chmod +x ./src/packages.sh` to install the packages.\
+Run `chmod +x ./src/packages.sh` to install the packages.
 
-Then run `./src/packages.sh`.\
+Then run `./src/packages.sh`.
 
 Finally, to run the app write `./src/run.sh` in the terminal. 
 
