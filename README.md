@@ -79,7 +79,9 @@ In the code I made a module called 'suspects_list_3' with a similar function use
 
 
 The notebook function can be very useful to the user who wants to write down what they remember from the evidence and interviews. \ 
-![Notebook menu](./docs/notebook%20menu.png)
+
+![Notebook menu](./docs/notebook%20menu.png) \
+
 In the code the notebook feature is made of 2 files: a csv file to input the notes and another one that will make the csv file work through a main function that contains other functions for each feature. \
 The 'add note' option will have the user to input thoughts freely. That is possible through a function used only for adding notes to the csv file that is called 'file_name', the file will be opened in append mode and the newline="" parameter will make sure that everytime the user will add a note, it will be inserted in a new line in the csv file. Then the function is closed with a method that will add the note into the csv file. 
 ![Add a note](./docs/add%20note%201.png)
