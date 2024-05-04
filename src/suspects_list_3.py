@@ -36,7 +36,7 @@ def motives ():
 
         elif choice =="4": 
             print("\nYou are questioning the Driver, making time to ask them about the relationship with the victim and what they were doing when the murder happened...")
-            print("The suspect's alibi is: Waiting outside in the car. ")
+            print("The suspect's alibi is: Smoking outside. ")
             print("After talking with the suspect you arrive at the conclusion that their possible motive could be: Quick to anger. ")
 
         elif choice == "5": 
