@@ -18,8 +18,8 @@ Run `chmod +x ./src/packages.sh` to install the packages.
 
 Then run `./src/packages.sh`.
 
-Finally, to run the app write `./src/run.sh` in the terminal. 
-In case the bash script doesn't run properly, please run `python3 ./src/main.py` in the terminal. 
+Finally, to run the app write `./src/run.sh` in the terminal. \
+In case the bash script doesn't run properly, please run `python3 ./src/main.py`. 
 
 
 ### Features: 
