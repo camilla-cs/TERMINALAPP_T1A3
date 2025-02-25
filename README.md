@@ -36,17 +36,6 @@ The main features of 'A Study in Red' are:
  The notebook is a feature on its own because the user can add, remove, edit, and view the notes they wrote with just a single input from the keyboard. \
  It's a useful tool to write down what the user thinks the killer is. 
 
-### Implementation plan: 
-Trello has been used to keep track of the application's development. I divided the tasks by each feature I wanted to be implemented. \
-The deadline is set on 5 May, the day of the assignment's submission, and the list of features are checked as I complete writing the code for them. 
-
-![Screenshot 1](./docs/Screenshot%201.png)
-![Screenshot 2](./docs/Screenshot%202.png)
-![Screenshot 3](./docs/Screenshot%203.png)
-![Screenshot 4](./docs/Screenshot%204.png)
-![Screenshot 5](./docs/Screenshot%205.png)
-![Scrrenshot 6](./docs/Screenshot%206.png)
-
 
 ### Walkthrough: 
 ![Pseudocode](./docs/Terminal%20app.png)
